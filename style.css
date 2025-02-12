@@ -5,16 +5,20 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
+    /* line-height: 1.6; */
+}
+
+.main{
+    background-color: #fff;
 }
 
 /* Top Section */
 .top-section {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #292424;
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
+    max-width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -33,67 +37,68 @@ body {
 
 .top-section a {
     display: inline-block;
-    text-decoration: none;
-    color: #007bff;
+    text-decoration: underline;
+    color: #0e0f0f;
     font-weight: bold;
     margin-top: 10px;
 }
 
 .top-section a:hover {
     text-decoration: underline;
+    color: #007bff;
 }
 
 /* Image Section */
 .image-section {
     background-color: #fff;
-    border: 1px solid #ddd;
     margin: 20px auto;
     padding: 20px;
     max-width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .image-section h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 15px;
+    text-align: left;
+    text-decoration: underline;
 }
 
 .image-section img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
     margin-bottom: 15px;
+    justify-items: flex-start;
 }
 
 .image-section a {
-    text-decoration: none;
-    color: #007bff;
+    display: inline-block;
+    text-decoration: underline;
+    color: #0e0f0f;
     font-weight: bold;
+    margin-top: 10px;
+    
 }
 
 .image-section a:hover {
     text-decoration: underline;
+    color: #007bff;
 }
 
 /* Trivia Section */
 .trivia-section {
     background-color: #fff;
-    border: 1px solid #ddd;
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
+    max-width: 100%;
+} 
 
 .trivia-section h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 .trivia-section ol {
@@ -108,16 +113,22 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .top-section, .image-section, .trivia-section {
+
+    .top-section,
+    .image-section,
+    .trivia-section {
         margin: 10px;
         padding: 15px;
     }
 
-    .top-section h1, .image-section h2, .trivia-section h2 {
+    .top-section h1,
+    .image-section h2,
+    .trivia-section h2 {
         font-size: 18px;
     }
 
-    .top-section p, .trivia-section li {
+    .top-section p,
+    .trivia-section li {
         font-size: 14px;
     }
 }
